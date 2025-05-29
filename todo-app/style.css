@@ -98,7 +98,9 @@ main {
 
 .theme-container {
   display: flex;
-  justify-content: flex-end; /* aligns to right */
+  justify-content: center; /* aligns to right */
+  align-items: center;
+  gap: 10px;
 }
 
 .theme{
