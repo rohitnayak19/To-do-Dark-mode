@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Sorting App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Sorting App</h1>
+        
+        <div class="controls">
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search movies...">
+            </div>
+            
+            <div class="filter-controls">
+                <select id="genre-filter">
+                    <option value="all">All Genres</option>
+                    <option value="Action">Action</option>
+                    <option value="Comedy">Comedy</option>
+                    <option value="Drama">Drama</option>
+                    <option value="Sci-Fi">Sci-Fi</option>
+                    <option value="Thriller">Thriller</option>
+                </select>
+                
+                <select id="sort-by">
+                    <option value="title-asc">Title (A-Z)</option>
+                    <option value="title-desc">Title (Z-A)</option>
+                    <option value="year-asc">Year (Oldest)</option>
+                    <option value="year-desc">Year (Newest)</option>
+                    <option value="rating-asc">Rating (Lowest)</option>
+                    <option value="rating-desc">Rating (Highest)</option>
+                </select>
+            </div>
+        </div>
+        
+        <div id="movie-list" class="movie-list"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

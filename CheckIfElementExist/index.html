@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is Element Exits in array</title>
+</head>
+
+<body>
+    <h1>Is Element Exist in array</h1>
+
+    <script>
+        function elementExists(arr, element) {
+            return arr.has(element)
+        }
+
+        console.log(elementExists([1, 2, 3, 4], 3)); // Output: true
+        console.log(elementExists([1, 2, 3, 4], 5)); // Output: false
+    </script>
+</body>
+
+</html>
