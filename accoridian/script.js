@@ -35,14 +35,16 @@ accordians.forEach((accordian) =>{
     const answer = accordian.querySelector('.answer')
 
     accordian.addEventListener('click' ,()=>{
-        console.log(icon.classList.contains('active'));
-        
-        if(!icon.classList.contains('active')){
+        const isActive = icon.classList.contains('active')
+        console.log(answer.scrollHeight)
+        accordians.forEach((item) =>{
+            item.querySelector('.icon').classList.remove('active')
+            item.querySelector('.answer').style.maxHeight=null
+        })
+
+        if(!isActive){
             icon.classList.add('active')
-            answer.style.maxHeight=answer.scrollHeight + 'px'
-        } else{
-            icon.classList.remove('active')
-            answer.style.maxHeight=null;
+            answer.style.maxHeight = answer.scrollHeight + 'px'
         }
     })
 })
