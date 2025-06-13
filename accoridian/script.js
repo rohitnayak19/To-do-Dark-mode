@@ -36,7 +36,7 @@ accordians.forEach((accordian) =>{
 
     accordian.addEventListener('click' ,()=>{
         const isActive = icon.classList.contains('active')
-        console.log(answer.scrollHeight)
+        // console.log(answer.scrollHeight)
         accordians.forEach((item) =>{
             item.querySelector('.icon').classList.remove('active')
             item.querySelector('.answer').style.maxHeight=null
