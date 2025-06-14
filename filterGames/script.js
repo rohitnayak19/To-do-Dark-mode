@@ -30,7 +30,7 @@ function displayGames(games){
 function filteredGames(){
     const selectedGenre = gameGenre.value
     const selectedSearch = searchGenre.value
-    console.log(selectedGenre);
+    // console.log(selectedGenre);
     const filtredGame = games.filter((game) =>{
         const matchSearch = game.title.toLowerCase().includes(selectedSearch)
        const matchGenre = selectedGenre === 'all' || game.genre.includes(selectedGenre)
